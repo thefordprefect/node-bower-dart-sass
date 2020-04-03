@@ -1,6 +1,6 @@
 FROM node:latest
 
-run apt-get update -qy && apt-get install -y lftp
+RUN apt-get update -qy && apt-get install -y lftp
 
 # Install Sass 
 RUN npm install -g sass
