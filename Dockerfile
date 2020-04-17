@@ -1,9 +1,6 @@
 FROM node:latest
 
-RUN apt-get update -qy && apt-get install -y lftp
-
-# Install zip
-RUN sudo apt-get -yq install zip
+RUN apt-get update -qy && apt-get install -y lftp zip
 
 # Install Sass 
 RUN npm install -g sass
